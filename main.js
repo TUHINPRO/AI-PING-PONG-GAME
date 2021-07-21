@@ -30,7 +30,7 @@ function preload() {
 
 function setup(){
   var canvas =  createCanvas(700,600);
-	instializeInSetup(mario);
+
 	canvas.parent("canvas");
 
 	video=createCapture(VIDEO);
@@ -64,7 +64,7 @@ function modelLoaded() {
 function draw(){
 
  background(0); 
-if(status==start){
+if(status=="start"){
   fill("black");
   stroke("black");
   rect(680,0,20,700);
